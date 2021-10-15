@@ -45,21 +45,11 @@ function App() {
 
   function Trainer() {
     const gltf1 = useLoader(GLTFLoader, 'https://farfetch-cors.herokuapp.com/http://dwaynep-marshall.co.uk/1.gltf')
-    const gltf2 = useLoader(GLTFLoader, 'https://farfetch-cors.herokuapp.com/http://dwaynep-marshall.co.uk/2.gltf')
-    const gltf3 = useLoader(GLTFLoader, 'https://farfetch-cors.herokuapp.com/http://dwaynep-marshall.co.uk/3.gltf')
-    const gltf4 = useLoader(GLTFLoader, 'https://farfetch-cors.herokuapp.com/http://dwaynep-marshall.co.uk/4.gltf')
-    const gltf5 = useLoader(GLTFLoader, 'https://farfetch-cors.herokuapp.com/http://dwaynep-marshall.co.uk/5.gltf')
-    const gltf6 = useLoader(GLTFLoader, 'https://farfetch-cors.herokuapp.com/http://dwaynep-marshall.co.uk/6.gltf')
-    const gltf7 = useLoader(GLTFLoader, 'https://farfetch-cors.herokuapp.com/http://dwaynep-marshall.co.uk/7.gltf')
+    
     return (
       <>
         <primitive object={gltf1.scene} scale={0.2} position={0} />
-        <primitive object={gltf2.scene} scale={0.2} position={0} />
-        <primitive object={gltf3.scene} scale={0.2} position={0} />
-        <primitive object={gltf4.scene} scale={0.2} position={0} />
-        <primitive object={gltf5.scene} scale={0.2} position={[0.5, -0.8, 0]} />
-        <primitive object={gltf6.scene} scale={0.2} position={[0.5, -0.7, 0]} />
-        <primitive object={gltf7.scene} scale={0.2} position={0} />
+     
         </>
       
       );
